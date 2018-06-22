@@ -1,2 +1,4 @@
 result.json
 *.pyc
+.vscode
+pdf

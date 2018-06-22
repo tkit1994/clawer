@@ -6,7 +6,7 @@ from scrapy.http.response import urljoin
 class ArxivSpider(scrapy.Spider):
     name = 'arxiv'
     allowed_domains = ['arxiv.org']
-    start_urls = ['https://arxiv.org/list/cs.CV/180{}?show=1000'.format(i) for i in range(1,6)]
+    start_urls = ['https://arxiv.org/list/cs.CV/180{}?show=1000'.format(i) for i in range(1,7)]
 
     def parse(self, response):
         dt = response.xpath('//*[@id="dlpage"]/dl/dt')
